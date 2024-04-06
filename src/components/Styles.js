@@ -4,21 +4,22 @@ import React from 'react';
 const width = Dimensions.get('screen').width;
 const height = Dimensions.get('screen').height;
 
+
 const Styles = StyleSheet.create({
+  
   card: {
-    height:400,
-    width:331,
+    height:height/2,
+    width:width/1.2,
     borderRadius:48,
-    margin:30,
-    backgroundColor:'orange',
+    backgroundColor:'#FE8C00',
     padding:20,
-    // alignSelf:'center'
-    // justifyContent:'flex-end'
+    alignSelf:'center',
+    position:'absolute',
+    margin:30,
     bottom:0
-   
   },
   delicaciesTxt:{
-    // alignSelf:'center',
+    textAlign:"center",
     color:"#FFFFFF",
     fontSize:32,
     alignSelf:"center",
@@ -26,8 +27,21 @@ const Styles = StyleSheet.create({
   },
   restaurentPeraTxt:{
     color:'#FFFFFF',
+    textAlign:"center",
     alignSelf:"center",
     fontSize:14,
+  },
+  tabs:{
+    alignSelf:"center",
+    marginLeft:6,
+    marginEnd:6
+  },
+  skipStyle:{
+    color:'white',
+  },
+  arrowStyle:{
+   alignSelf:'center',
+   marginStart:6
   }
 
 });
