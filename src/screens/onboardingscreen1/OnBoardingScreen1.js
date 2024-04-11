@@ -5,6 +5,8 @@ const width = Dimensions.get('screen').width;
 const height = Dimensions.get('screen').height;
 import { onBoardingData } from '../../constant/staticData';
 import Onboarding from 'react-native-onboarding-swiper';
+import styles from './onboardingStyle';
+
 const OnBoarding1 = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -71,76 +73,5 @@ const OnBoarding1 = () => {
 
 
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-
-  },
-  img: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover'
-  },
-  input: {
-    width: '80%',
-    height: 40,
-    borderColor: 'white',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginBottom: 10,
-    paddingHorizontal: 10,
-    color: 'white',
-  },
-  button: {
-    backgroundColor: 'white',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-  },
-  buttonText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'red',
-  },
-  card: {
-    height: height / 2,
-    width: width / 1.2,
-    borderRadius: 48,
-    backgroundColor: '#FE8C00',
-    padding: 20,
-    alignSelf: 'center',
-    position: 'absolute',
-    margin: 30,
-    bottom: 0
-  },
-  delicaciesTxt: {
-    textAlign: "center",
-    color: "#FFFFFF",
-    fontSize: 32,
-    alignSelf: "center",
-    fontWeight: '600',
-  },
-  restaurentPeraTxt: {
-    color: '#FFFFFF',
-    textAlign: "center",
-    alignSelf: "center",
-    fontSize: 14,
-  },
-  tabs: {
-    alignSelf: "center",
-    marginLeft: 6,
-    marginEnd: 6
-  },
-  skipStyle: {
-    color: 'white',
-  },
-  arrowStyle: {
-    alignSelf: 'center',
-    marginStart: 6
-  }
-
-});
 
 export default OnBoarding1;

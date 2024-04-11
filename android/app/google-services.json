@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532540009435",
+    "project_id": "getmetherapy-c07e0",
+    "storage_bucket": "getmetherapy-c07e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532540009435:android:8f4286ae1ad7d08d1e55fe",
+        "android_client_info": {
+          "package_name": "com.getmetherapy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD70PN7MTYW_Hp8W0AKbt_TEaWZmkT4Ty4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,18 +1,20 @@
-import { View, Text, StatusBar, Image ,TouchableOpacity} from "react-native";
+import { View, Text, StatusBar, Image, TouchableOpacity } from "react-native";
 import { useState } from 'react'
 import Styles from "../login/LoginStyles";
-// import { CheckBox } from 'react-native-elements';
 import CheckBox from 'react-native-check-box';
-// import CheckBox from '@react-native-community/checkbox';
 
-const SignUp = ({navigation}) => {
-    // const [isChecked, setIsChecked] = useState(false);
-    // const [toggleCheckBox, setToggleCheckBox] = useState(false)
+
+const SignUp = ({ navigation }) => {
     const [isChecked, setIsChecked] = useState(false);
+    const [email, setEmail] = useState("")
+    const [userName, setUserName] = useState("")
+    const [password, setPassword] = useState("")
 
+    //check box function
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
     };
+
     return (
         <View style={Styles.mainContainer}>
             {/* <Text style={Styles.loginParagraph}>Login to your {\n} account.</Text> */}
@@ -42,7 +44,7 @@ const SignUp = ({navigation}) => {
             </View>
 
             {/* <Text style={Styles.forgotTxt}>Forgot password?</Text> */}
-            <TouchableOpacity style={Styles.btnView}   onPress={() => navigation.navigate('Login')}>
+            <TouchableOpacity style={Styles.btnView} onPress={() => navigation.navigate('Login')}>
                 <Text style={Styles.btnTxt}>Register</Text>
 
 
